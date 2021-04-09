@@ -4,8 +4,12 @@
 # 猜錯的話 要告訴他 比答案小
 
 import random
+start = input('請決定最小隨機數字:')
+end = input('請決定最大隨機數字:')
+start = int(start)
+end = int(end)
 
-r = random.randint(1, 100)
+r = random.randint(start, end)
 count = 0
 
 while True:
